@@ -3,7 +3,7 @@ This script can be run on the console on CSGO500 to attempt to collect the rain 
 */
 
 function collectRain() {
-	const buttons = document.querySelectorAll('input[type="button"].base-button.is-pink'); // Select all button elements
+	const buttons = document.querySelectorAll('button.base-button.is-pink'); // Select all button elements
 	const targetButton = Array.from(buttons).find(button => button.textContent.trim() === 'Join Rain');
 
 	if (targetButton) {
