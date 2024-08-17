@@ -7,11 +7,11 @@ function collectRain() {
 	const targetButton = Array.from(buttons).find(button => button.textContent.trim() === 'Join Rain');
 
 	if (targetButton) {
-	    console.log(`Button found: ${Date.now()}`);
+	    console.log(`Button found: ${new Date(Date.now())}`);
 	    targetButton.click();
-	    console.log(`Button clicked: ${Date.now()}`);
+	    console.log(`Button clicked: ${new Date(Date.now())}`);
 	} else {
-	    console.log(`Button not found: ${Date.now()}`);
+	    console.log(`Button not found: ${new Date(Date.now())}`);
 	    // Prevents recursion by exiting the function if the button isn't found
 	    return;
 	}
